@@ -27,7 +27,7 @@ export default function ActionButtons({ likes }: Props) {
             {/* Like Button */}
             <button
                 onClick={handleLike}
-                className={`flex items-center gap-2 px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-full text-sm font-medium transition active:scale-95
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition active:scale-95 cursor-pointer
         ${liked
                         ? "bg-blue-900 text-blue-400"
                         : "bg-zinc-700 hover:bg-zinc-600 text-white"
@@ -37,12 +37,12 @@ export default function ActionButtons({ likes }: Props) {
             </button>
 
             {/* Share Button */}
-            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95">
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95 cursor-pointer">
                 🔗 Share
             </button>
 
             {/* Save Button */}
-            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95">
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95 cursor-pointer">
                 💾 Save
             </button>
 

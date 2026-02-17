@@ -36,10 +36,10 @@ export default function ChannelInfo({ channel }: Props) {
             {/* Subscribe Button */}
             <button
                 onClick={() => setSubscribed(!subscribed)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition active:scale-95
+                className={`px-4 py-2 text-sm font-medium rounded-full transition active:scale-95 cursor-pointer
           ${subscribed
-                        ? "bg-gray-200 text-black"
-                        : "bg-white hover:bg-white-400 text-black"
+                        ? "bg-white text-black"
+                        : "bg-zinc-800 hover:bg-zinc-700 text-white"
                     }`}
             >
                 {subscribed ? "Subscribed" : "Subscribe"}

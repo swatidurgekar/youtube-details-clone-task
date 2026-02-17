@@ -19,7 +19,7 @@ export default function DescriptionBox({ description }: Props) {
 
             <button
                 onClick={() => setExpanded(!expanded)}
-                className="mt-2 font-medium text-gray-300 hover:text-white"
+                className="mt-2 font-medium text-gray-300 hover:text-white cursor-pointer"
             >
                 {expanded ? "Show less" : "more..."}
             </button>
