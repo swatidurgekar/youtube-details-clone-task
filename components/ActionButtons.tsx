@@ -22,27 +22,27 @@ export default function ActionButtons({ likes }: Props) {
     };
 
     return (
-        <div className="flex flex-wrap gap-3 py-4 border-b">
+        <div className="flex flex-wrap gap-3 py-4 border-b border-zinc-800">
 
             {/* Like Button */}
             <button
                 onClick={handleLike}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition
+                className={`flex items-center gap-2 px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-full text-sm font-medium transition active:scale-95
         ${liked
-                        ? "bg-blue-100 text-blue-600"
-                        : "bg-gray-100 hover:bg-gray-200 text-black"
+                        ? "bg-blue-900 text-blue-400"
+                        : "bg-zinc-700 hover:bg-zinc-600 text-white"
                     }`}
             >
                 👍 {formatNumber(likeCount)}
             </button>
 
             {/* Share Button */}
-            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200t text-black text-sm font-medium transition">
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95">
                 🔗 Share
             </button>
 
             {/* Save Button */}
-            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-black text-sm font-medium transition">
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium transition active:scale-95">
                 💾 Save
             </button>
 

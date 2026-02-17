@@ -14,7 +14,7 @@ export default function ChannelInfo({ channel }: Props) {
     const [subscribed, setSubscribed] = useState(false);
 
     return (
-        <div className="flex items-center justify-between py-4 border-b">
+        <div className="flex items-center justify-between py-4 border-b border-zinc-800">
             {/* Left Side */}
             <div className="flex items-center gap-3">
                 <img
@@ -36,10 +36,10 @@ export default function ChannelInfo({ channel }: Props) {
             {/* Subscribe Button */}
             <button
                 onClick={() => setSubscribed(!subscribed)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition
+                className={`px-4 py-2 text-sm font-medium rounded-full transition active:scale-95
           ${subscribed
                         ? "bg-gray-200 text-black"
-                        : "bg-red-600 hover:bg-red-700 text-white"
+                        : "bg-white hover:bg-white-400 text-black"
                     }`}
             >
                 {subscribed ? "Subscribed" : "Subscribe"}

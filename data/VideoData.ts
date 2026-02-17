@@ -2,7 +2,7 @@ export const videoData = {
     title: "Building a YouTube Clone UI with React & Tailwind",
     views: "152K views",
     uploaded: "2 weeks ago",
-    likes: 4200,
+    likes: 42,
     channel: {
         name: "CodeWithSwati",
         avatar: "https://i.pravatar.cc/150?img=5",

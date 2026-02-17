@@ -8,7 +8,7 @@ type Props = {
 
 export default function VideoTitle({ data }: Props) {
     return (
-        <div className="mb-4">
+        <div className="mb-3">
             <h1 className="text-lg md:text-2xl font-semibold leading-snug">
                 {data.title}
             </h1>
