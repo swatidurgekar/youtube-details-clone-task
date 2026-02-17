@@ -19,7 +19,7 @@ export default function CommentsSection({ comments }: Props) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 800); // simulate loading
+        }, 800); // loading
 
         return () => clearTimeout(timer);
     }, []);
