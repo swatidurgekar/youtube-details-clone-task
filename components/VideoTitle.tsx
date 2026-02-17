@@ -13,7 +13,7 @@ export default function VideoTitle({ data }: Props) {
                 {data.title}
             </h1>
 
-            <p className="text-sm text-gray-600 mt-1">
+            <p className="text-sm text-gray-400 mt-1">
                 {data.views} • {data.uploaded}
             </p>
         </div>
